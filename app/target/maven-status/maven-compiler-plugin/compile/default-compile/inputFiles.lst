@@ -1,0 +1,15 @@
+/home/alex/shop/src/main/java/com/fortegroupe/config/WebConfig.java
+/home/alex/shop/src/main/java/com/fortegroupe/utill/MessageFactory.java
+/home/alex/shop/src/main/java/com/fortegroupe/controller/MainController.java
+/home/alex/shop/src/main/java/com/fortegroupe/model/User.java
+/home/alex/shop/src/main/java/com/fortegroupe/config/DatabaseConfig.java
+/home/alex/shop/src/main/java/com/fortegroupe/service/UserService.java
+/home/alex/shop/src/main/java/com/fortegroupe/utill/PasswordHelper.java
+/home/alex/shop/src/main/java/com/fortegroupe/controller/HomeController.java
+/home/alex/shop/src/main/java/com/fortegroupe/service/impl/UserServiceImpl.java
+/home/alex/shop/src/main/java/com/fortegroupe/dao/implementation/UserDaoImpl.java
+/home/alex/shop/src/main/java/com/fortegroupe/dao/UserDao.java
+/home/alex/shop/src/main/java/com/fortegroupe/config/RootConfig.java
+/home/alex/shop/src/main/java/com/fortegroupe/model/Message.java
+/home/alex/shop/src/main/java/com/fortegroupe/config/WebAppInit.java
+/home/alex/shop/src/main/java/com/fortegroupe/utill/UserValidator.java
