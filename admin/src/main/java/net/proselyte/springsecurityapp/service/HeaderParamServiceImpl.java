@@ -13,21 +13,21 @@ public class HeaderParamServiceImpl implements HeaderParamService {
 
     @Override
     public HeaderParam getHeaderParam(int pId) {
-        return headerParamDAO.getHeaderParam(pId);
+        return headerParamDAO.getOne(pId);
     }
 
     @Override
     public void setHeaderParam(HeaderParam pHeaderParam) {
-        headerParamDAO.setHeaderParam(pHeaderParam);
+        headerParamDAO.save(pHeaderParam);
     }
 
     @Override
-    public void editHeaderParam(int pId, HeaderParam pHeaderParam) {
-        headerParamDAO.editHeaderParam(pId, pHeaderParam);
+    public void editHeaderParam(HeaderParam pHeaderParam) {
+        headerParamDAO.save(pHeaderParam);
     }
 
     @Override
     public void deleteHeaderParam(int pId) {
-        headerParamDAO.deleteHeaderParam(pId);
+        headerParamDAO.delete(pId);
     }
 }

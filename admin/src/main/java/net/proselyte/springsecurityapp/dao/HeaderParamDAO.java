@@ -1,16 +1,11 @@
 package net.proselyte.springsecurityapp.dao;
 
 import net.proselyte.springsecurityapp.model.HeaderParam;
+import net.proselyte.springsecurityapp.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  */
-public interface HeaderParamDAO {
-    HeaderParam getHeaderParam(int pId);
-
-    void setHeaderParam(HeaderParam pHeaderParam);
-
-    void editHeaderParam(int pId, HeaderParam pHeaderParam);
-
-    void deleteHeaderParam(int pId);
+public interface HeaderParamDAO extends JpaRepository<HeaderParam, Integer> {
 }

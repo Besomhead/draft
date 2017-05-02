@@ -10,7 +10,7 @@ public interface HeaderParamService {
 
     void setHeaderParam(HeaderParam pHeaderParam);
 
-    void editHeaderParam(int pId, HeaderParam pHeaderParam);
+    void editHeaderParam(HeaderParam pHeaderParam);
 
     void deleteHeaderParam(int pId);
 }
