@@ -4,6 +4,9 @@ import net.proselyte.springsecurityapp.dao.HeaderParamDAO;
 import net.proselyte.springsecurityapp.model.HeaderParam;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.persistence.EntityManager;
+import java.util.List;
+
 /**
  *
  */
@@ -17,17 +20,17 @@ public class HeaderParamServiceImpl implements HeaderParamService {
     }
 
     @Override
-    public void setHeaderParam(HeaderParam pHeaderParam) {
-        headerParamDAO.save(pHeaderParam);
-    }
-
-    @Override
-    public void editHeaderParam(HeaderParam pHeaderParam) {
-        headerParamDAO.save(pHeaderParam);
+    public void saveHeaderParam(HeaderParam pHeaderParam) {
+        headerParamDAO.saveAndFlush(pHeaderParam);
     }
 
     @Override
     public void deleteHeaderParam(int pId) {
         headerParamDAO.delete(pId);
+    }
+
+    @Override
+    public List<HeaderParam> getHeaderParamList() {
+        return headerParamDAO.findAll();
     }
 }
