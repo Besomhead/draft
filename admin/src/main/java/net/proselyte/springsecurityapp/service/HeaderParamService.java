@@ -14,5 +14,7 @@ public interface HeaderParamService {
 
     void deleteHeaderParam(int pId);
 
+    void setHeaderParamDisplay(int pId, boolean pIsDisplay);
+
     List<HeaderParam> getHeaderParamList();
 }

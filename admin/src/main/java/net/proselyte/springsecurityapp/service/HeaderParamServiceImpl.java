@@ -25,6 +25,13 @@ public class HeaderParamServiceImpl implements HeaderParamService {
     }
 
     @Override
+    public void setHeaderParamDisplay(int pId, boolean pIsDisplay) {
+        HeaderParam headerParam = headerParamDAO.getOne(pId);
+        headerParam.setDisplay(pIsDisplay);
+        headerParamDAO.saveAndFlush(headerParam);
+    }
+
+    @Override
     public void deleteHeaderParam(int pId) {
         headerParamDAO.delete(pId);
     }

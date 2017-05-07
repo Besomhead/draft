@@ -36,6 +36,12 @@ public class HeaderParamController {
         return "header";
     }
 
+    @RequestMapping(value = "/setParamDisplay", method = RequestMethod.POST)
+    public String setParamDisplay(@RequestParam int pId, @RequestParam boolean isDisplay, Model pModel){
+        headerParamService.setHeaderParamDisplay(pId, isDisplay);
+        return "header";
+    }
+
     @RequestMapping(value = "/deleteParam", method = RequestMethod.POST)
     public String deleteParam(@RequestParam int pId, Model pModel){
         headerParamService.deleteHeaderParam(pId);
