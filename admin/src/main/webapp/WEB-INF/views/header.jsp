@@ -8,9 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:forEach items="${params}" var="par">
-			<p><c:out value="${par.name}"></c:out>
-				<input type="text" value="${par.value }"/></p>
+	<c:forEach items="${headerParams}" var="par">
+			<p><c:out value="${par.param}"></c:out>
+				<input type="text" value="${par.value}"/></p>
 	</c:forEach>
 	
 </body>
